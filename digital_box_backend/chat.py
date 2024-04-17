@@ -51,7 +51,7 @@ def handle_send_message(data):
         attachment_bytes = base64.b64decode(attachment['bytes'])
         s3_key = f"attachments/{complaint_id}/{message_id}/{attachment_name}"
         s3.put_object(Body=attachment_bytes, Bucket=BUCKET_NAME, Key=s3_key)
-        attachment_url = f"https://{bucket_name}.s3.amazonaws.com/{s3_key}"
+        attachment_url = f"https://{BUCKET_NAME}.s3.amazonaws.com/{s3_key}"
 
     # Store the message in DynamoDB
     chat_table.put_item(
