@@ -1,0 +1,50 @@
+name: colleague
+description: "Colleague side app"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  google_generative_ai:
+  intl:
+  flutter:
+    sdk: flutter
+  file_picker: ^8.0.0+1
+  path_provider: ^2.0.2
+  cupertino_icons: ^1.0.2
+  flutter_chart:
+  fl_chart: ^0.36.0
+  amplify_flutter: ^1.0.0
+  amplify_auth_cognito: ^1.0.0
+  amplify_analytics_pinpoint: ^1.0.0
+  flutter_login: ^5.0.0
+  amplify_core: ^1.0.0
+  amplify_authenticator: ^1.0.0
+  collection: ^1.18.0
+  http: ^1.2.1
+  image_picker: ^1.0.7
+  socket_io_client: ^2.0.3+1
+  open_file: ^3.3.2
+  permission_handler: ^8.1.4
+  flutter_downloader:
+  flutter_dotenv: ^5.1.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+  fonts:
+    - family: Baker
+      fonts:
+        - asset: fonts/Baker.otf
